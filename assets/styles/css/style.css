@@ -1,0 +1,275 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+/* line 20, ../scss/style.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 30, ../scss/style.scss */
+body {
+  line-height: 1;
+}
+
+/* line 35, ../scss/style.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 39, ../scss/style.scss */
+nav ul {
+  list-style: none;
+}
+
+/* line 43, ../scss/style.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 48, ../scss/style.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 53, ../scss/style.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+/* line 62, ../scss/style.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+/* line 69, ../scss/style.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 76, ../scss/style.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 80, ../scss/style.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 85, ../scss/style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+/* line 91, ../scss/style.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 100, ../scss/style.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/* ==========================================================================
+   INCLUDE
+   ========================================================================== */
+/* ==========================================================================
+   GLOBALS
+   ========================================================================== */
+@font-face {
+  font-family: "Economica";
+  src: url('../../fonts/Economica-Regular-OTF.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "EconomicaBold";
+  src: url('../../fonts/Economica-Bold-OTF.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "EconomicaItalic";
+  src: url('../../fonts/Economica-Italic-OTF.otf') format('opentype');
+}
+
+/* line 140, ../scss/style.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 144, ../scss/style.scss */
+body {
+  padding: 25px 0 0;
+  background: url("../../images/bg.gif") #dcdcd4 repeat-x;
+  color: black;
+  font-family: "Economica";
+}
+
+/* line 152, ../scss/style.scss */
+.main-container {
+  width: 960px;
+  margin: auto;
+}
+/* line 157, ../scss/style.scss */
+.main-container .lines {
+  padding: 25px;
+  border: 3px dashed #dcdcd4;
+}
+
+/* line 164, ../scss/style.scss */
+h1, h2 {
+  font-weight: normal;
+}
+
+/* line 168, ../scss/style.scss */
+h1 {
+  font-size: 48px;
+}
+
+/* line 172, ../scss/style.scss */
+h2 {
+  font-size: 24px;
+}
+
+/* line 176, ../scss/style.scss */
+p {
+  margin: 0 0 10px;
+}
+
+/* line 180, ../scss/style.scss */
+a {
+  color: #e93c4f;
+  border-bottom: 1px dotted #e93c4f;
+  text-decoration: none;
+}
+/* line 185, ../scss/style.scss */
+a:hover {
+  border: 0;
+}
+
+/* line 195, ../scss/style.scss */
+.main-container > header {
+  width: 400px;
+  margin: 0 auto 25px;
+  padding: 25px;
+  background: white;
+  text-align: center;
+}
+/* line 204, ../scss/style.scss */
+.main-container > header h2 {
+  font-family: "EconomicaItalic";
+}
+
+/* line 220, ../scss/style.scss */
+.about-me {
+  float: left;
+  width: 615px;
+  margin: auto;
+  padding: 25px;
+  background: white;
+}
+/* line 229, ../scss/style.scss */
+.about-me p {
+  margin: 0 0 15px;
+  line-height: 1.25;
+  font-size: 24px;
+}
+/* line 236, ../scss/style.scss */
+.about-me p:last-child {
+  margin: 0;
+}
+/* line 240, ../scss/style.scss */
+.about-me .skill-set {
+  margin-bottom: 15px;
+}
+/* line 243, ../scss/style.scss */
+.about-me .skill-set li {
+  display: inline-block;
+  margin: 0 5px 8px 0;
+  padding: 5px;
+  background: #2d4255;
+  color: white;
+  list-style: none;
+}
+/* line 252, ../scss/style.scss */
+.about-me .skill-set li .lines {
+  padding: 5px;
+  border: 1px dashed white;
+}
+
+/* line 261, ../scss/style.scss */
+.portrait {
+  float: right;
+  height: 320px;
+  width: 320px;
+  padding: 25px;
+  background: white;
+}
+
+/* line 270, ../scss/style.scss */
+.links {
+  float: right;
+  width: 305px;
+  text-align: center;
+}
+/* line 276, ../scss/style.scss */
+.links li {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  background: white;
+  list-style: none;
+}
+/* line 283, ../scss/style.scss */
+.links li a {
+  border: none;
+}
+/* line 287, ../scss/style.scss */
+.links li:hover {
+  cursor: pointer;
+  opacity: .5;
+}

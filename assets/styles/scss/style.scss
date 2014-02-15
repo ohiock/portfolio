@@ -1,0 +1,292 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* ==========================================================================
+   INCLUDE
+   ========================================================================== */
+@import 'compass/css3';
+
+
+
+
+
+/* ==========================================================================
+   GLOBALS
+   ========================================================================== */
+// ------------------------------------
+// ----- VARIABLES
+// ------------------------------------
+$grey: #dcdcd4;
+$blue: #2d4255;
+$white: #ffffff;
+$red: #e93c4f;
+
+
+
+// ------------------------------------
+// ----- FONTS
+// ------------------------------------
+@include font-face('Economica', font-files('Economica-Regular-OTF.otf'));
+@include font-face('EconomicaBold', font-files('Economica-Bold-OTF.otf'));
+@include font-face('EconomicaItalic', font-files('Economica-Italic-OTF.otf'));
+
+
+
+
+
+// ------------------------------------
+// ----- GLOBAL STYLES
+// ------------------------------------
+* {
+	@include box-sizing(border-box);
+}
+
+body {
+	padding: 25px 0 0;
+
+	background: url("../../images/bg.gif") $grey repeat-x;
+	color: black;
+	font-family: "Economica";
+}
+
+.main-container {
+	width: 960px;
+
+	margin: auto;
+
+	.lines {
+		padding: 25px;
+
+		border: 3px dashed $grey
+	}
+}
+
+h1, h2 {
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+p {
+	margin: 0 0 10px;
+}
+
+a {
+	color: $red;
+	border-bottom: 1px dotted $red;
+	text-decoration: none;
+
+	&:hover {
+		border: 0;
+	}
+}
+
+
+
+// ------------------------------------
+// ----- HEADER
+// ------------------------------------
+.main-container > header {
+	width: 400px;
+
+	margin: 0 auto 25px;
+	padding: 25px;
+
+	background: $white;
+	text-align: center;
+
+	h2 {
+		font-family: "EconomicaItalic";
+	}
+}
+
+
+// ------------------------------------
+// ----- MENU & NAVIGATION
+// ------------------------------------
+
+
+
+
+// ------------------------------------
+// ----- MAIN CONTENT AREA
+// ------------------------------------
+.about-me {
+	float: left;
+	width: 615px;
+
+	margin: auto;
+	padding: 25px;
+
+	background: $white;
+
+	p {
+		margin: 0 0 15px;
+
+		line-height: 1.25;
+		font-size: 24px;
+	}
+
+	p:last-child {
+		margin: 0;
+	}
+
+	.skill-set {
+		margin-bottom: 15px;
+
+		li {
+			display: inline-block;
+			margin: 0 5px 8px 0;
+			padding: 5px;
+
+			background: $blue;
+			color: $white;
+			list-style: none;
+
+			.lines {
+				padding: 5px;
+
+				border: 1px dashed $white;
+			}
+		}
+	}
+}
+
+.portrait {
+	float: right;
+	height: 320px;
+	width: 320px;
+	padding: 25px;
+
+	background: $white;
+}
+
+.links {
+	float: right;
+	width: 305px;
+
+	text-align: center;
+
+	li {
+		display: inline-block;
+		margin: 10px 10px 0 0;
+
+		background: $white;
+		list-style: none;
+
+		a {
+			border: none;
+		}
+		
+		&:hover {
+			cursor: pointer;
+			opacity: .5;
+		}
+	}
+}
