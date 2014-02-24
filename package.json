@@ -1,0 +1,18 @@
+{
+  "name": "WebPortfolio",
+  "description": "This is my personal page on the interwebs.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ohiock/portfolio"
+  },
+  "author": "Terrence Bowman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ohiock/portfolio/issues"
+  },
+  "homepage": "https://github.com/ohiock/portfolio",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-compass": "~0.7.2"
+  }
+}

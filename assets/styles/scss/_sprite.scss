@@ -1,0 +1,76 @@
+  $bg-x: 0px;
+  $bg-y: 256px;
+  $bg-offset-x: 0px;
+  $bg-offset-y: -256px;
+  $bg-width: 64px;
+  $bg-height: 400px;
+  $bg-total-width: 64px;
+  $bg-total-height: 656px;
+  $bg-image: '../../images/spritesheet.png';
+  $bg: 0px 256px 0px -256px 64px 400px 64px 656px '../../images/spritesheet.png';
+  $codeschool-x: 0px;
+  $codeschool-y: 0px;
+  $codeschool-offset-x: 0px;
+  $codeschool-offset-y: 0px;
+  $codeschool-width: 64px;
+  $codeschool-height: 64px;
+  $codeschool-total-width: 64px;
+  $codeschool-total-height: 656px;
+  $codeschool-image: '../../images/spritesheet.png';
+  $codeschool: 0px 0px 0px 0px 64px 64px 64px 656px '../../images/spritesheet.png';
+  $github-x: 0px;
+  $github-y: 64px;
+  $github-offset-x: 0px;
+  $github-offset-y: -64px;
+  $github-width: 64px;
+  $github-height: 64px;
+  $github-total-width: 64px;
+  $github-total-height: 656px;
+  $github-image: '../../images/spritesheet.png';
+  $github: 0px 64px 0px -64px 64px 64px 64px 656px '../../images/spritesheet.png';
+  $stackoverflow-x: 0px;
+  $stackoverflow-y: 128px;
+  $stackoverflow-offset-x: 0px;
+  $stackoverflow-offset-y: -128px;
+  $stackoverflow-width: 64px;
+  $stackoverflow-height: 64px;
+  $stackoverflow-total-width: 64px;
+  $stackoverflow-total-height: 656px;
+  $stackoverflow-image: '../../images/spritesheet.png';
+  $stackoverflow: 0px 128px 0px -128px 64px 64px 64px 656px '../../images/spritesheet.png';
+  $twitter-x: 0px;
+  $twitter-y: 192px;
+  $twitter-offset-x: 0px;
+  $twitter-offset-y: -192px;
+  $twitter-width: 64px;
+  $twitter-height: 64px;
+  $twitter-total-width: 64px;
+  $twitter-total-height: 656px;
+  $twitter-image: '../../images/spritesheet.png';
+  $twitter: 0px 192px 0px -192px 64px 64px 64px 656px '../../images/spritesheet.png';
+
+  @mixin sprite-width($sprite) {
+    width: nth($sprite, 5);
+  }
+
+  @mixin sprite-height($sprite) {
+    height: nth($sprite, 6);
+  }
+
+  @mixin sprite-position($sprite) {
+    $sprite-offset-x: nth($sprite, 3);
+    $sprite-offset-y: nth($sprite, 4);
+    background-position: $sprite-offset-x  $sprite-offset-y;
+  }
+
+  @mixin sprite-image($sprite) {
+    $sprite-image: nth($sprite, 9);
+    background-image: url(#{$sprite-image});
+  }
+
+  @mixin sprite($sprite) {
+    @include sprite-image($sprite);
+    @include sprite-position($sprite);
+    @include sprite-width($sprite);
+    @include sprite-height($sprite);
+  }
