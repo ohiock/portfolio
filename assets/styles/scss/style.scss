@@ -25,9 +25,9 @@ $red: #a20e30;
 // ------------------------------------
 // ----- FONTS
 // ------------------------------------
-@include font-face('Economica', font-files('Economica-Regular-OTF.otf'));
-@include font-face('EconomicaBold', font-files('Economica-Bold-OTF.otf'));
-@include font-face('EconomicaItalic', font-files('Economica-Italic-OTF.otf'));
+@include font-face('Economica', font-files('econ-regular.otf', 'econ-regular.eot'));
+@include font-face('EconomicaBold', font-files('econ-bold.otf', 'econ-bold.eot'));
+@include font-face('EconomicaItalic', font-files('econ-italic.otf', 'econ-bold.eot'));
 
 
 
