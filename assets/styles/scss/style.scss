@@ -184,7 +184,7 @@ a {
 
 			border: none;
 
-			transition: all .15s ease-out;
+			@include single-transition(all, 0.3s, ease-out);
 
 			&.twitter {
 				@include sprite($twitter);
@@ -199,7 +199,7 @@ a {
 			}
 
 			&:hover {
-				transform: scale(.9);
+				@include scale(0.9);
 			}
 		}
 
