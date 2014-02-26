@@ -47,6 +47,7 @@ body {
 	@include sprite-position($bg);
 	color: black;
 	font-family: "Economica";
+	font-size: 62.5%;
 }
 
 .main-container {
@@ -66,15 +67,18 @@ h1, h2 {
 }
 
 h1 {
-	font-size: 48px;
+	font-size: 4.8em;
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 2.4em;
 }
 
 p {
-	margin: 0 0 10px;
+	margin: 0 0 15px;
+
+	line-height: 1.25;
+	font-size: 2.4em;
 }
 
 a {
@@ -126,13 +130,6 @@ a {
 
 	background: $white;
 
-	p {
-		margin: 0 0 15px;
-
-		line-height: 1.25;
-		font-size: 24px;
-	}
-
 	p:last-child {
 		margin: 0;
 	}
@@ -148,6 +145,7 @@ a {
 			background: $red;
 			color: $white;
 			list-style: none;
+			font-size: 1.4em;
 
 			.lines {
 				padding: 5px;
@@ -175,7 +173,7 @@ a {
 
 	li {
 		display: inline-block;
-		margin: 10px 10px 0 0;
+		margin: 25px 25px 0 0;
 
 		list-style: none;
 
@@ -185,6 +183,8 @@ a {
 			width: $twitter-width;
 
 			border: none;
+
+			transition: all .15s ease-out;
 
 			&.twitter {
 				@include sprite($twitter);
@@ -197,11 +197,14 @@ a {
 			&.codeschool {
 				@include sprite($codeschool);
 			}
+
+			&:hover {
+				transform: scale(.9);
+			}
 		}
-		
-		&:hover {
-			cursor: pointer;
-			opacity: .5;
+
+		&:last-child {
+			margin: 0;
 		}
 	}
 }
